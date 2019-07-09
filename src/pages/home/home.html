@@ -1,0 +1,68 @@
+<ion-header no-border>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>{{nome_guia}}</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only>
+        <ion-icon name="md-star-outline"></ion-icon>
+      </button>
+      <button ion-button icon-only>
+        <ion-icon name="md-settings"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <div class="header-banner">
+
+    <ion-slides initialSlide=0 loop=true autoplay=2000 speed=3000>
+      <ion-slide *ngFor="let b of Banner">
+        <ion-card class="card">
+          <img src="{{b.img}}">
+        </ion-card>
+      </ion-slide>
+    </ion-slides>
+    <div class="hora_atual" *ngIf="data_Atual">{{data_Atual}}</div>
+  </div>
+
+  <div class="grid-full">
+    <ion-card *ngFor="let c of Cards" class="animated fadeInUp">
+      <img src="{{c.img}}" />
+    </ion-card>
+  </div>
+  <h2 class="background double"><span>Lojas em Destaques</span></h2>
+
+  <div class="home-destaques">
+    <ion-slides slidesPerView=2 loop=true>
+      <ion-slide *ngFor="let b of Banner">
+        <ion-card id="card_destaque">
+          <img src="{{b.img}}">
+        </ion-card>
+      </ion-slide>
+    </ion-slides>
+  </div>
+
+  <h2 class="background1 double1"><span>Promoções</span></h2>
+
+  <div class="home-destaques">
+    <ion-slides slidesPerView=2 loop=true>
+      <ion-slide *ngFor="let b of Banner">
+        <ion-card id="card_destaque">
+          <img src="{{b.img}}">
+        </ion-card>
+      </ion-slide>
+    </ion-slides>
+  </div>
+
+</ion-content>
+<ion-footer class="fim">
+  <ion-label style="
+        text-align: center;
+        color: #fff;
+        font: 12px sans-serif;">{{anuncie}}&nbsp;
+       <ion-icon name="md-star-outline"></ion-icon>  
+      </ion-label>
+</ion-footer>

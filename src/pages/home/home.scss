@@ -1,0 +1,149 @@
+page-home {
+  .toolbar-background {
+    background: linear-gradient(to left, color($colors, temaRosa) 0%, color($colors, temaAzul) 100%);
+  }
+  .header-banner {
+    min-height: 50%;
+    background: linear-gradient(to left, color($colors, temaRosa) 0%, color($colors, temaAzul) 100%);
+    border-radius: 0px 0px 50px 50px;
+    box-shadow: 0 2px 10px 0 color($colors, temaAzul);
+  }
+
+  .card {
+    margin-top: 5%;
+    background: rgba(255, 255, 255, 0);
+    border-radius: 2%;
+    padding: 5%;
+  }
+  
+  .hora_atual {
+    text-align: center;
+    color: #fff;
+    font-weight: 250;
+    font-size: 2.3rem;
+    margin: -20px;
+    padding-top: 25px;
+  }
+
+  .grid-full {
+    position: relative;
+    margin-top: -15%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+  }
+
+  .card-title {
+    position: absolute;
+    top: 50%;
+    font-size: 1em;
+    width: 100%;
+    font-weight: bold;
+    color: #000;
+  }
+  //-----------------------------
+
+  h2 {
+    font: 10px sans-serif;
+    margin-top: 7px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  h2.background {
+    position: relative;
+    z-index: 1;
+  }
+  h2.background:before {
+    border-top: 2px solid #dfdfdf;
+    content: "";
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 95%;
+    z-index: -1;
+  }
+  h2.background span {
+    background: #fff;
+    padding: 0 15px;
+  }
+  h2.double:before {
+    border-top: none;
+  }
+  h2.double:after {
+    border-bottom: 1px solid color($colors, temaAzulClaro);
+    -webkit-box-shadow: 0 1px 0 0 color($colors, temaRosaClaro);
+    -moz-box-shadow: 0 1px 0 0 color($colors, temaRosaClaro);
+    box-shadow: 0 1px 0 0 color($colors, temaRosaClaro);
+    content: "";
+    margin: 0 auto;
+    position: absolute;
+    top: 45%;
+    left: 0;
+    right: 0;
+    width: 95%;
+    z-index: -1;
+  }
+
+  h2.background1 {
+    position: relative;
+    z-index: 1;
+  }
+  h2.background1:before {
+    border-top: 2px solid #dfdfdf;
+    content: "";
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 95%;
+    z-index: -1;
+  }
+  h2.background1 span {
+    background: #fff;
+    padding: 0 15px;
+  }
+  h2.double1:before {
+    border-top: none;
+  }
+  h2.double1:after {
+    border-bottom: 1px solid color($colors, temaAzulClaro);
+    -webkit-box-shadow: 0 1px 0 0 color($colors, temaRosaClaro);
+    -moz-box-shadow: 0 1px 0 0 color($colors, temaRosaClaro);
+    box-shadow: 0 1px 0 0 color($colors, temaRosaClaro);
+    content: "";
+    margin: 0 auto;
+
+    position: absolute;
+    top: 45%;
+    left: 0;
+    right: 0;
+    width: 95%;
+    z-index: -1;
+  }
+
+  .home-destaques{
+    top: 5%;
+    padding: 5%;
+  }
+
+  #card_destaque{
+    padding: 20%;
+  }
+
+  
+
+  //-----------------------------
+
+  .fim {
+    min-height: 3%;
+    background: linear-gradient(to left, color($colors, temaRosa) 0%, color($colors, temaAzul) 100%);
+    border-radius: 50px 50px 0px 0px;
+    box-shadow: 0 2px 10px 0 color($colors, temaAzul); 
+  }
+  
+}
